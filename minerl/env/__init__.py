@@ -26,8 +26,8 @@ from minerl.env import spaces
 from minerl.env.core import MineRLEnv, missions_dir
 
 import numpy as np
+import minerl.env.ecological
 
-  
 register(
     id='MineRLTreechop-v0',
     entry_point='minerl.env:MineRLEnv',
@@ -37,13 +37,13 @@ register(
             'pov': spaces.Box(low=0, high=255, shape=(64, 64, 3), dtype=np.uint8),
         }),
         'action_space': spaces.Dict(spaces={
-            "forward": spaces.Discrete(2), 
-            "back": spaces.Discrete(2), 
-            "left": spaces.Discrete(2), 
-            "right": spaces.Discrete(2), 
-            "jump": spaces.Discrete(2), 
-            "sneak": spaces.Discrete(2), 
-            "sprint": spaces.Discrete(2), 
+            "forward": spaces.Discrete(2),
+            "back": spaces.Discrete(2),
+            "left": spaces.Discrete(2),
+            "right": spaces.Discrete(2),
+            "jump": spaces.Discrete(2),
+            "sneak": spaces.Discrete(2),
+            "sprint": spaces.Discrete(2),
             "attack": spaces.Discrete(2),
             "camera": spaces.Box(low=-180, high=180, shape=(2,), dtype=np.float32),
         }),
@@ -69,6 +69,89 @@ The agent begins in a forest biome (near many trees) with an iron axe for cuttin
     },
     max_episode_steps=8000,
     reward_threshold=64.0,
+)
+
+register(
+    id='MineRLShapingTreechop-v0',
+    entry_point='minerl.env:MineRLEnv',
+    kwargs={
+        'xml': os.path.join(missions_dir, 'shaping_treechop.xml'),
+        'observation_space': spaces.Dict({
+            'pov': spaces.Box(low=0, high=255, shape=(64, 64, 3), dtype=np.uint8),
+        }),
+        'action_space': spaces.Dict(spaces={
+            "forward": spaces.Discrete(2),
+            "back": spaces.Discrete(2),
+            "left": spaces.Discrete(2),
+            "right": spaces.Discrete(2),
+            "jump": spaces.Discrete(2),
+            "sneak": spaces.Discrete(2),
+            "sprint": spaces.Discrete(2),
+            "attack": spaces.Discrete(2),
+            "camera": spaces.Box(low=-180, high=180, shape=(2,), dtype=np.float32),
+        }),
+    },
+    max_episode_steps=8000,
+    reward_threshold=64.0,
+)
+
+register(
+    id='MineRLMazeRunner-v0',
+    entry_point='minerl.env:MineRLEnv',
+    kwargs={
+        'xml': os.path.join(missions_dir, 'mazerunner.xml'),
+        'observation_space': spaces.Dict({
+            'pov': spaces.Box(low=0, high=255, shape=(64, 64, 3), dtype=np.uint8),
+            'inventory': spaces.Dict(spaces={
+                'dirt': spaces.Box(low=0, high=2304, shape=(), dtype=np.int)
+            }),
+            'compassAngle': spaces.Box(low=-180.0, high=180.0, shape=(), dtype=np.float32)
+        }),
+        'action_space': spaces.Dict(spaces={
+            "forward": spaces.Discrete(2),
+            "back": spaces.Discrete(2),
+            "left": spaces.Discrete(2),
+            "right": spaces.Discrete(2),
+            "jump": spaces.Discrete(2),
+            "sneak": spaces.Discrete(2),
+            "sprint": spaces.Discrete(2),
+            "attack": spaces.Discrete(2),
+            "camera": spaces.Box(low=-180, high=180, shape=(2,), dtype=np.float32),
+            "place": spaces.Enum('none', 'dirt')
+        }),
+    },
+    max_episode_steps=8000,
+    reward_threshold=1000.0,
+)
+
+
+register(
+    id='MineRLEating-v0',
+    entry_point='minerl.env:MineRLEnv',
+    kwargs={
+        'xml': os.path.join(missions_dir, 'eating_1.xml'),
+        'observation_space': spaces.Dict({
+            'pov': spaces.Box(low=0, high=255, shape=(64, 64, 3), dtype=np.uint8),
+            'inventory': spaces.Dict(spaces={
+                'dirt': spaces.Box(low=0, high=2304, shape=(), dtype=np.int)
+            }),
+            'compassAngle': spaces.Box(low=-180.0, high=180.0, shape=(), dtype=np.float32)
+        }),
+        'action_space': spaces.Dict(spaces={
+            "forward": spaces.Discrete(2), 
+            "back": spaces.Discrete(2), 
+            "left": spaces.Discrete(2), 
+            "right": spaces.Discrete(2), 
+            "jump": spaces.Discrete(2), 
+            "sneak": spaces.Discrete(2), 
+            "sprint": spaces.Discrete(2), 
+            "attack": spaces.Discrete(2),
+            "camera": spaces.Box(low=-180, high=180, shape=(2,), dtype=np.float32),
+            "place": spaces.Enum('none', 'dirt')
+        }),
+    },
+    max_episode_steps=8000,
+    reward_threshold=1000.0,
 )
 
 

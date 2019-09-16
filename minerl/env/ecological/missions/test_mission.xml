@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Mission xmlns="http://ProjectMalmo.microsoft.com">
+    <About>
+      <Summary>Healthy diet. Eating right and wrong objects</Summary>
+    </About>
+
+    <ModSettings>
+      
+      <PrioritiseOffscreenRendering>true</PrioritiseOffscreenRendering>
+    </ModSettings>
+
+    <ServerSection>
+      <ServerInitialConditions>
+            <Time>
+                <StartTime>6000</StartTime>
+                <AllowPassageOfTime>false</AllowPassageOfTime>
+            </Time>
+            <Weather>clear</Weather>
+            <AllowSpawning>false</AllowSpawning>
+      </ServerInitialConditions>
+      <ServerHandlers>
+        <FlatWorldGenerator generatorString="3;7,220*1,5*3,2;3;,biome_1" />
+        <DrawingDecorator>
+          <DrawCuboid colour="GREEN" face="UP" type="carpet" x1="-50" x2="50" y1="226" y2="226" z1="-50" z2="50" />
+            <DrawCuboid type="air" x1="-50" x2="50" y1="227" y2="230" z1="-50" z2="50" />
+        <DrawBlock type="bedrock" x="-20" y="227" z="-20" /><DrawBlock type="bedrock" x="-20" y="227" z="-19" /><DrawBlock type="bedrock" x="-20" y="227" z="-18" /><DrawBlock type="bedrock" x="-20" y="227" z="-17" /><DrawBlock type="bedrock" x="-20" y="227" z="-16" /><DrawBlock type="bedrock" x="-20" y="227" z="-15" /><DrawBlock type="bedrock" x="-20" y="227" z="-14" /><DrawBlock type="bedrock" x="-20" y="227" z="-13" /><DrawBlock type="bedrock" x="-20" y="227" z="-12" /><DrawBlock type="bedrock" x="-20" y="227" z="-11" /><DrawBlock type="bedrock" x="-20" y="227" z="-10" /><DrawBlock type="bedrock" x="-20" y="227" z="-9" /><DrawBlock type="bedrock" x="-20" y="227" z="-8" /><DrawBlock type="bedrock" x="-20" y="227" z="-7" /><DrawBlock type="bedrock" x="-20" y="227" z="-6" /><DrawBlock type="bedrock" x="-20" y="227" z="-5" /><DrawBlock type="bedrock" x="-20" y="227" z="-4" /><DrawBlock type="bedrock" x="-20" y="227" z="-3" /><DrawBlock type="bedrock" x="-20" y="227" z="-2" /><DrawBlock type="bedrock" x="-20" y="227" z="-1" /><DrawBlock type="bedrock" x="-20" y="227" z="0" /><DrawBlock type="bedrock" x="-20" y="227" z="1" /><DrawBlock type="bedrock" x="-20" y="227" z="2" /><DrawBlock type="bedrock" x="-20" y="227" z="3" /><DrawBlock type="bedrock" x="-20" y="227" z="4" /><DrawBlock type="bedrock" x="-20" y="227" z="5" /><DrawBlock type="bedrock" x="-20" y="227" z="6" /><DrawBlock type="bedrock" x="-20" y="227" z="7" /><DrawBlock type="bedrock" x="-20" y="227" z="8" /><DrawBlock type="bedrock" x="-20" y="227" z="9" /><DrawBlock type="bedrock" x="-20" y="227" z="10" /><DrawBlock type="bedrock" x="-20" y="227" z="11" /><DrawBlock type="bedrock" x="-20" y="227" z="12" /><DrawBlock type="bedrock" x="-20" y="227" z="13" /><DrawBlock type="bedrock" x="-20" y="227" z="14" /><DrawBlock type="bedrock" x="-20" y="227" z="15" /><DrawBlock type="bedrock" x="-20" y="227" z="16" /><DrawBlock type="bedrock" x="-20" y="227" z="17" /><DrawBlock type="bedrock" x="-20" y="227" z="18" /><DrawBlock type="bedrock" x="-20" y="227" z="19" /><DrawBlock type="bedrock" x="-19" y="227" z="-20" /><DrawBlock type="wool" x="-19" y="227" z="1" /><DrawBlock type="bedrock" x="-19" y="227" z="19" /><DrawBlock type="bedrock" x="-18" y="227" z="-20" /><DrawBlock type="wool" x="-18" y="227" z="-16" /><DrawBlock type="wool" x="-18" y="227" z="9" /><DrawBlock type="bedrock" x="-18" y="227" z="19" /><DrawBlock type="bedrock" x="-17" y="227" z="-20" /><DrawBlock type="wool" x="-17" y="227" z="1" /><DrawBlock type="bedrock" x="-17" y="227" z="19" /><DrawBlock type="bedrock" x="-16" y="227" z="-20" /><DrawBlock type="bedrock" x="-16" y="227" z="19" /><DrawBlock type="bedrock" x="-15" y="227" z="-20" /><DrawBlock type="bedrock" x="-15" y="227" z="19" /><DrawBlock type="bedrock" x="-14" y="227" z="-20" /><DrawBlock type="bedrock" x="-14" y="227" z="19" /><DrawBlock type="bedrock" x="-13" y="227" z="-20" /><DrawBlock type="wool" x="-13" y="227" z="1" /><DrawBlock type="bedrock" x="-13" y="227" z="19" /><DrawBlock type="bedrock" x="-12" y="227" z="-20" /><DrawBlock type="bedrock" x="-12" y="227" z="19" /><DrawBlock type="bedrock" x="-11" y="227" z="-20" /><DrawBlock type="bedrock" x="-11" y="227" z="19" /><DrawBlock type="bedrock" x="-10" y="227" z="-20" /><DrawBlock type="wool" x="-10" y="227" z="-3" /><DrawBlock type="bedrock" x="-10" y="227" z="19" /><DrawBlock type="bedrock" x="-9" y="227" z="-20" /><DrawBlock type="wool" x="-9" y="227" z="-12" /><DrawBlock type="wool" x="-9" y="227" z="5" /><DrawBlock type="bedrock" x="-9" y="227" z="19" /><DrawBlock type="bedrock" x="-8" y="227" z="-20" /><DrawBlock type="wool" x="-8" y="227" z="-5" /><DrawBlock type="wool" x="-8" y="227" z="-4" /><DrawBlock type="bedrock" x="-8" y="227" z="19" /><DrawBlock type="bedrock" x="-7" y="227" z="-20" /><DrawBlock type="wool" x="-7" y="227" z="12" /><DrawBlock type="bedrock" x="-7" y="227" z="19" /><DrawBlock type="bedrock" x="-6" y="227" z="-20" /><DrawBlock type="bedrock" x="-6" y="227" z="19" /><DrawBlock type="bedrock" x="-5" y="227" z="-20" /><DrawBlock type="wool" x="-5" y="227" z="-8" /><DrawBlock type="wool" x="-5" y="227" z="-3" /><DrawBlock type="wool" x="-5" y="227" z="-1" /><DrawBlock type="wool" x="-5" y="227" z="0" /><DrawBlock type="bedrock" x="-5" y="227" z="19" /><DrawBlock type="bedrock" x="-4" y="227" z="-20" /><DrawBlock type="wool" x="-4" y="227" z="-4" /><DrawBlock type="wool" x="-4" y="227" z="12" /><DrawBlock type="wool" x="-4" y="227" z="15" /><DrawBlock type="bedrock" x="-4" y="227" z="19" /><DrawBlock type="bedrock" x="-3" y="227" z="-20" /><DrawBlock type="wool" x="-3" y="227" z="-16" /><DrawBlock type="wool" x="-3" y="227" z="-4" /><DrawBlock type="wool" x="-3" y="227" z="2" /><DrawBlock type="wool" x="-3" y="227" z="18" /><DrawBlock type="bedrock" x="-3" y="227" z="19" /><DrawBlock type="bedrock" x="-2" y="227" z="-20" /><DrawBlock type="wool" x="-2" y="227" z="-12" /><DrawBlock type="wool" x="-2" y="227" z="-4" /><DrawBlock type="wool" x="-2" y="227" z="-3" /><DrawBlock type="wool" x="-2" y="227" z="-1" /><DrawBlock type="bedrock" x="-2" y="227" z="19" /><DrawBlock type="bedrock" x="-1" y="227" z="-20" /><DrawBlock type="wool" x="-1" y="227" z="-18" /><DrawBlock type="wool" x="-1" y="227" z="0" /><DrawBlock type="wool" x="-1" y="227" z="10" /><DrawBlock type="wool" x="-1" y="227" z="16" /><DrawBlock type="wool" x="-1" y="227" z="18" /><DrawBlock type="bedrock" x="-1" y="227" z="19" /><DrawBlock type="bedrock" x="0" y="227" z="-20" /><DrawBlock type="bedrock" x="0" y="227" z="19" /><DrawBlock type="bedrock" x="1" y="227" z="-20" /><DrawBlock type="wool" x="1" y="227" z="13" /><DrawBlock type="wool" x="1" y="227" z="18" /><DrawBlock type="bedrock" x="1" y="227" z="19" /><DrawBlock type="bedrock" x="2" y="227" z="-20" /><DrawBlock type="wool" x="2" y="227" z="3" /><DrawBlock type="wool" x="2" y="227" z="14" /><DrawBlock type="bedrock" x="2" y="227" z="19" /><DrawBlock type="bedrock" x="3" y="227" z="-20" /><DrawBlock type="wool" x="3" y="227" z="-8" /><DrawBlock type="wool" x="3" y="227" z="-7" /><DrawBlock type="bedrock" x="3" y="227" z="19" /><DrawBlock type="bedrock" x="4" y="227" z="-20" /><DrawBlock type="wool" x="4" y="227" z="-14" /><DrawBlock type="bedrock" x="4" y="227" z="19" /><DrawBlock type="bedrock" x="5" y="227" z="-20" /><DrawBlock type="wool" x="5" y="227" z="13" /><DrawBlock type="bedrock" x="5" y="227" z="19" /><DrawBlock type="bedrock" x="6" y="227" z="-20" /><DrawBlock type="wool" x="6" y="227" z="17" /><DrawBlock type="wool" x="6" y="227" z="18" /><DrawBlock type="bedrock" x="6" y="227" z="19" /><DrawBlock type="bedrock" x="7" y="227" z="-20" /><DrawBlock type="wool" x="7" y="227" z="7" /><DrawBlock type="bedrock" x="7" y="227" z="19" /><DrawBlock type="bedrock" x="8" y="227" z="-20" /><DrawBlock type="wool" x="8" y="227" z="11" /><DrawBlock type="bedrock" x="8" y="227" z="19" /><DrawBlock type="bedrock" x="9" y="227" z="-20" /><DrawBlock type="wool" x="9" y="227" z="18" /><DrawBlock type="bedrock" x="9" y="227" z="19" /><DrawBlock type="bedrock" x="10" y="227" z="-20" /><DrawBlock type="wool" x="10" y="227" z="-11" /><DrawBlock type="bedrock" x="10" y="227" z="19" /><DrawBlock type="bedrock" x="11" y="227" z="-20" /><DrawBlock type="wool" x="11" y="227" z="-16" /><DrawBlock type="bedrock" x="11" y="227" z="19" /><DrawBlock type="bedrock" x="12" y="227" z="-20" /><DrawBlock type="bedrock" x="12" y="227" z="19" /><DrawBlock type="bedrock" x="13" y="227" z="-20" /><DrawBlock type="wool" x="13" y="227" z="-13" /><DrawBlock type="bedrock" x="13" y="227" z="19" /><DrawBlock type="bedrock" x="14" y="227" z="-20" /><DrawBlock type="wool" x="14" y="227" z="-17" /><DrawBlock type="wool" x="14" y="227" z="17" /><DrawBlock type="wool" x="14" y="227" z="18" /><DrawBlock type="bedrock" x="14" y="227" z="19" /><DrawBlock type="bedrock" x="15" y="227" z="-20" /><DrawBlock type="wool" x="15" y="227" z="-12" /><DrawBlock type="wool" x="15" y="227" z="1" /><DrawBlock type="bedrock" x="15" y="227" z="19" /><DrawBlock type="bedrock" x="16" y="227" z="-20" /><DrawBlock type="wool" x="16" y="227" z="2" /><DrawBlock type="wool" x="16" y="227" z="6" /><DrawBlock type="bedrock" x="16" y="227" z="19" /><DrawBlock type="bedrock" x="17" y="227" z="-20" /><DrawBlock type="bedrock" x="17" y="227" z="19" /><DrawBlock type="bedrock" x="18" y="227" z="-20" /><DrawBlock type="wool" x="18" y="227" z="-16" /><DrawBlock type="bedrock" x="18" y="227" z="19" /><DrawBlock type="bedrock" x="19" y="227" z="-20" /><DrawBlock type="bedrock" x="19" y="227" z="-19" /><DrawBlock type="bedrock" x="19" y="227" z="-18" /><DrawBlock type="bedrock" x="19" y="227" z="-17" /><DrawBlock type="bedrock" x="19" y="227" z="-16" /><DrawBlock type="bedrock" x="19" y="227" z="-15" /><DrawBlock type="bedrock" x="19" y="227" z="-14" /><DrawBlock type="bedrock" x="19" y="227" z="-13" /><DrawBlock type="bedrock" x="19" y="227" z="-12" /><DrawBlock type="bedrock" x="19" y="227" z="-11" /><DrawBlock type="bedrock" x="19" y="227" z="-10" /><DrawBlock type="bedrock" x="19" y="227" z="-9" /><DrawBlock type="bedrock" x="19" y="227" z="-8" /><DrawBlock type="bedrock" x="19" y="227" z="-7" /><DrawBlock type="bedrock" x="19" y="227" z="-6" /><DrawBlock type="bedrock" x="19" y="227" z="-5" /><DrawBlock type="bedrock" x="19" y="227" z="-4" /><DrawBlock type="bedrock" x="19" y="227" z="-3" /><DrawBlock type="bedrock" x="19" y="227" z="-2" /><DrawBlock type="bedrock" x="19" y="227" z="-1" /><DrawBlock type="bedrock" x="19" y="227" z="0" /><DrawBlock type="bedrock" x="19" y="227" z="1" /><DrawBlock type="bedrock" x="19" y="227" z="2" /><DrawBlock type="bedrock" x="19" y="227" z="3" /><DrawBlock type="bedrock" x="19" y="227" z="4" /><DrawBlock type="bedrock" x="19" y="227" z="5" /><DrawBlock type="bedrock" x="19" y="227" z="6" /><DrawBlock type="bedrock" x="19" y="227" z="7" /><DrawBlock type="bedrock" x="19" y="227" z="8" /><DrawBlock type="bedrock" x="19" y="227" z="9" /><DrawBlock type="bedrock" x="19" y="227" z="10" /><DrawBlock type="bedrock" x="19" y="227" z="11" /><DrawBlock type="bedrock" x="19" y="227" z="12" /><DrawBlock type="bedrock" x="19" y="227" z="13" /><DrawBlock type="bedrock" x="19" y="227" z="14" /><DrawBlock type="bedrock" x="19" y="227" z="15" /><DrawBlock type="bedrock" x="19" y="227" z="16" /><DrawBlock type="bedrock" x="19" y="227" z="17" /><DrawBlock type="bedrock" x="19" y="227" z="18" /><DrawBlock type="bedrock" x="19" y="227" z="19" /></DrawingDecorator>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <ServerQuitFromTimeUp description="" timeLimitMs="400000" />
+        <ServerQuitWhenAnyAgentFinishes description="" />
+      </ServerHandlers>
+    </ServerSection>
+
+    <AgentSection mode="Survival">
+      <Name>The Hungry Caterpillar</Name>
+      <AgentStart>
+        <Placement pitch="0" x="0.5" y="227.0" yaw="0" z="0.5" />
+      <Inventory>
+        <InventoryItem slot="0" type="shears" />
+      </Inventory>
+      </AgentStart>
+      <AgentHandlers>
+        <VideoProducer want_depth="false">
+          <Width>64</Width>
+          <Height>64</Height>
+        </VideoProducer>
+            <FileBasedPerformanceProducer />
+            <ObservationFromFullInventory flat="false" />
+            <ObservationFromFullStats />
+            <HumanLevelCommands>
+                <ModifierList type="deny-list">
+                <command>moveMouse</command>
+                <command>inventory</command>
+                </ModifierList>
+            </HumanLevelCommands>
+            <CameraCommands />
+            <ObservationFromCompass />
+
+      <RewardForCollectingItem>
+        <Item reward="1" type="wool" />
+      </RewardForCollectingItem>
+
+      </AgentHandlers>
+    </AgentSection>
+  </Mission>

@@ -440,6 +440,8 @@ class MineRLEnv(gym.Env):
             self.done = False
             return self._peek_obs()
         except (socket.timeout, socket.error) as e:
+            import traceback
+            print(traceback.format_exc())
             logger.error("Failed to reset (socket error), trying again!")
             self._clean_connection()
             raise e
